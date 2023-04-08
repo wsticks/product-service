@@ -1,10 +1,12 @@
 package com.williams.productservice.dto;
 
+import lombok.Builder;
 import lombok.Data;
 
 import java.math.BigDecimal;
 
 @Data
+@Builder
 public class ProductRequest {
 
     private String name;
