@@ -15,7 +15,7 @@ public class DataLoader implements CommandLineRunner {
     private final ProductRepository productRepository;
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args) {
         if (productRepository.count() < 1) {
             Product product = new Product();
             product.setName("iPhone 13");
